@@ -11,7 +11,9 @@ async def serve(websocket, path):
     handler = MessageHandler(bot, websocket)
     async for message in websocket:
         message = json.loads(message)
-        print(message)
+        print()
+        print(json.dumps(message, indent=4))
+        print('-'*30)
         await getattr(handler, message["mensaje"])(message)
 
 
