@@ -1,4 +1,6 @@
 import brains
+import jugadas
+import pdb
 
 
 class Carta:
@@ -6,10 +8,17 @@ class Carta:
         self.palo = palo
         self.numero = numero
 
+    def __repr__(self):
+        return f'Carta: {self.numero} de {self.palo}'
+
+    def __eq__(self, other):
+        self.palo == other.palo and self.numero == other.numero
+
 
 class Game:
     def __init__(self, cartas, es_mano):
-        self.cartas = [Carta(**carta) for carta in cartas]
+        self.cartas_en_mano = [Carta(**carta) for carta in cartas]
+        self.cartas_bajadas = []
         self.mano = es_mano
         self.puntos = 0
         self.puntos_oponente = 0
@@ -21,6 +30,10 @@ class Game:
 
     def set_tantos_oponente(self, tantos):
         self.tantos_oponente = tantos
+
+    def bajar_carta(self, carta):
+        self.cartas_en_mano.remove(carta)
+        self.cartas_bajadas.append(carta)
 
 
 class FedeBot:
@@ -35,7 +48,10 @@ class FedeBot:
         pass
 
     def jugar(self, jugadas_disponibles):
-        return self.brain.play(self.game, jugadas_disponibles)
+        jugada = self.brain.play(self.game, jugadas_disponibles)
+        if isinstance(jugada, jugadas.BajarCarta):
+            self.game.bajar_carta(jugada.carta)
+        return jugada
 
     def resultado_mano(self, puntos, puntos_oponente):
         self.game.add_score(puntos, puntos_oponente)
