@@ -1,28 +1,9 @@
 import json
-import jugadas
+from jugadas import Jugada
 
 
 def toJugadaInstance(jugada):
-    if jugada["mensaje"] == "envido":
-        return jugadas.Envido()
-    elif jugada["mensaje"] == "real envido":
-        return jugadas.RealEnvido()
-    elif jugada["mensaje"] == "falta envido":
-        return jugadas.FaltaEnvido()
-    elif jugada["mensaje"] == "truco":
-        return jugadas.Truco()
-    elif jugada["mensaje"] == "retruco":
-        return jugadas.ReTruco()
-    elif jugada["mensaje"] == "vale 4":
-        return jugadas.Vale4()
-    elif jugada["mensaje"] == "carta":
-        return jugadas.BajarCarta()
-    elif jugada["mensaje"] == "quiero":
-        return jugadas.Quiero()
-    elif jugada["mensaje"] == "no quiero":
-        return jugadas.NoQuiero()
-    elif jugada["mensaje"] == "irse al mazo":
-        return jugadas.IrseAlMazo()
+    return Jugada.toInstance(jugada["mensaje"])
 
 
 class MessageHandler:
@@ -38,7 +19,7 @@ class MessageHandler:
         jugadas_disponibles = [toJugadaInstance(
             jugada) for jugada in message["jugadasDisponibles"]]
         jugada = self.bot.jugar(jugadas_disponibles)
-        print(jugada)
+        print('>>>',jugada)
         await self.ws.send(json.dumps(jugada.to_message()))
 
     async def resultadoMano(self, message):

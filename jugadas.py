@@ -1,75 +1,66 @@
 class Jugada:
 
+    @classmethod
+    def toInstance(cls, mensaje):
+        for subclass in cls.__subclasses__():
+            if subclass.mensaje == mensaje:
+                return subclass()
+        raise RuntimeError()
+
     def __str__(self):
         return str(self.to_message())
 
-
-class Truco(Jugada):
-
     def to_message(self):
         return {
-            "mensaje": "truco"
+            "mensaje": self.mensaje
         }
+
+
+class Null(Jugada):
+    mensaje = ""
+
+
+class Truco(Jugada):
+    mensaje = "truco"
 
 
 class ReTruco(Jugada):
-
-    def to_message(self):
-        return {
-            "mensaje": "retruco"
-        }
+    mensaje = "retruco"
 
 
 class Vale4(Jugada):
-
-    def to_message(self):
-        return {
-            "mensaje": "vale 4"
-        }
+    mensaje = "vale 4"
 
 
 class Envido(Jugada):
-    def to_message(self):
-        return {
-            "mensaje": "envido"
-        }
+    mensaje = "envido"
 
 
 class RealEnvido(Jugada):
-    def to_message(self):
-        return {
-            "mensaje": "real envido"
-        }
+    mensaje = "real envido"
 
 
 class FaltaEnvido(Jugada):
-    def to_message(self):
-        return {
-            "mensaje": "falta envido"
-        }
+    mensaje = "falta envido"
 
 
 class Quiero(Jugada):
-    def to_message(self):
-        return {
-            "mensaje": "quiero"
-        }
+    mensaje = "quiero"
 
 
 class NoQuiero(Jugada):
-    def to_message(self):
-        return {
-            "mensaje": "no quiero"
-        }
+    mensaje = "no quiero"
 
 
 class BajarCarta(Jugada):
+    mensaje = "carta"
+
     def __init__(self, carta=None):
         self.carta = carta
 
     def to_message(self):
         return {
-            "mensaje": "carta",
+            "mensaje": self.mensaje,
             "carta": {
                 "palo": self.carta.palo,
                 "numero": self.carta.numero
@@ -78,7 +69,4 @@ class BajarCarta(Jugada):
 
 
 class IrseAlMazo(Jugada):
-    def to_message(self):
-        return {
-            "mensaje": "irse al mazo"
-        }
+    mensaje = "irse al mazo"

@@ -1,0 +1,3203 @@
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:websockets.protocol:server - connection_made(<_SelectorSocketTransport fd=12 read=idle write=<idle, bufsize=0>>)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"espada","numero":6},{"palo":"oro","numero":6},{"palo":"oro","numero":2}],"esMano":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "espada",
+            "numero": 6
+        },
+        {
+            "palo": "oro",
+            "numero": 6
+        },
+        {
+            "palo": "oro",
+            "numero": 2
+        }
+    ],
+    "esMano": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "truco"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":1,"puntosOponente":0}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"espada","numero":11},{"palo":"basto","numero":2},{"palo":"basto","numero":7}],"esMano":false}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 1,
+    "puntosOponente": 0
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "espada",
+            "numero": 11
+        },
+        {
+            "palo": "basto",
+            "numero": 2
+        },
+        {
+            "palo": "basto",
+            "numero": 7
+        }
+    ],
+    "esMano": false
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":2,"puntosOponente":0}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 2,
+    "puntosOponente": 0
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"espada","numero":2},{"palo":"espada","numero":5},{"palo":"oro","numero":3}],"esMano":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "espada",
+            "numero": 2
+        },
+        {
+            "palo": "espada",
+            "numero": 5
+        },
+        {
+            "palo": "oro",
+            "numero": 3
+        }
+    ],
+    "esMano": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "truco"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"real envido","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "real envido",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "falta envido"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoEnvido","ganado":true,"tantosOponente":0}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":32,"puntosOponente":0}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoPartida","ganada":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"espada","numero":2},{"palo":"oro","numero":7},{"palo":"espada","numero":10}],"esMano":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoEnvido",
+    "ganado": true,
+    "tantosOponente": 0
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 32,
+    "puntosOponente": 0
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoPartida",
+    "ganada": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "espada",
+            "numero": 2
+        },
+        {
+            "palo": "oro",
+            "numero": 7
+        },
+        {
+            "palo": "espada",
+            "numero": 10
+        }
+    ],
+    "esMano": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "falta envido"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoEnvido","ganado":false,"tantosOponente":29}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":0,"puntosOponente":30}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoPartida","ganada":false}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"espada","numero":6},{"palo":"oro","numero":10},{"palo":"espada","numero":3}],"esMano":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoEnvido",
+    "ganado": false,
+    "tantosOponente": 29
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 0,
+    "puntosOponente": 30
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoPartida",
+    "ganada": false
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "espada",
+            "numero": 6
+        },
+        {
+            "palo": "oro",
+            "numero": 10
+        },
+        {
+            "palo": "espada",
+            "numero": 3
+        }
+    ],
+    "esMano": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "carta", "carta": {"palo": "oro", "numero": 10}}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[{"palo":"oro","numero":10}],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"truco","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"retruco","carta":{"palo":"","numero":0}},{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [
+        {
+            "palo": "oro",
+            "numero": 10
+        }
+    ],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "truco",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "retruco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "retruco"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[{"palo":"oro","numero":10}],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"vale 4","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [
+        {
+            "palo": "oro",
+            "numero": 10
+        }
+    ],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "vale 4",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "no quiero"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":0,"puntosOponente":3}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"basto","numero":2},{"palo":"espada","numero":1},{"palo":"basto","numero":5}],"esMano":false}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 0,
+    "puntosOponente": 3
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "basto",
+            "numero": 2
+        },
+        {
+            "palo": "espada",
+            "numero": 1
+        },
+        {
+            "palo": "basto",
+            "numero": 5
+        }
+    ],
+    "esMano": false
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"envido","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "envido",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "quiero"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoEnvido","ganado":false,"tantosOponente":27}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoEnvido",
+    "ganado": false,
+    "tantosOponente": 27
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[{"palo":"espada","numero":4}],"jugadaAnterior":{"mensaje":"carta","carta":{"palo":"espada","numero":4}},"jugadasDisponibles":[{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [
+        {
+            "palo": "espada",
+            "numero": 4
+        }
+    ],
+    "jugadaAnterior": {
+        "mensaje": "carta",
+        "carta": {
+            "palo": "espada",
+            "numero": 4
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "carta", "carta": {"palo": "basto", "numero": 5}}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[{"palo":"basto","numero":5}],"cartasEnMesaOponente":[{"palo":"espada","numero":4}],"jugadaAnterior":{"mensaje":"carta","carta":{"palo":"basto","numero":5}},"jugadasDisponibles":[{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [
+        {
+            "palo": "basto",
+            "numero": 5
+        }
+    ],
+    "cartasEnMesaOponente": [
+        {
+            "palo": "espada",
+            "numero": 4
+        }
+    ],
+    "jugadaAnterior": {
+        "mensaje": "carta",
+        "carta": {
+            "palo": "basto",
+            "numero": 5
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "truco"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[{"palo":"basto","numero":5}],"cartasEnMesaOponente":[{"palo":"espada","numero":4}],"jugadaAnterior":{"mensaje":"retruco","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"vale 4","carta":{"palo":"","numero":0}},{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [
+        {
+            "palo": "basto",
+            "numero": 5
+        }
+    ],
+    "cartasEnMesaOponente": [
+        {
+            "palo": "espada",
+            "numero": 4
+        }
+    ],
+    "jugadaAnterior": {
+        "mensaje": "retruco",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "vale 4",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "no quiero"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":0,"puntosOponente":7}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"oro","numero":2},{"palo":"basto","numero":4},{"palo":"oro","numero":1}],"esMano":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 0,
+    "puntosOponente": 7
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "oro",
+            "numero": 2
+        },
+        {
+            "palo": "basto",
+            "numero": 4
+        },
+        {
+            "palo": "oro",
+            "numero": 1
+        }
+    ],
+    "esMano": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "real envido"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoEnvido","ganado":true,"tantosOponente":0}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"quiero","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoEnvido",
+    "ganado": true,
+    "tantosOponente": 0
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "quiero",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "carta", "carta": {"palo": "oro", "numero": 2}}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[{"palo":"oro","numero":2}],"cartasEnMesaOponente":[{"palo":"basto","numero":7}],"jugadaAnterior":{"mensaje":"carta","carta":{"palo":"basto","numero":7}},"jugadasDisponibles":[{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [
+        {
+            "palo": "oro",
+            "numero": 2
+        }
+    ],
+    "cartasEnMesaOponente": [
+        {
+            "palo": "basto",
+            "numero": 7
+        }
+    ],
+    "jugadaAnterior": {
+        "mensaje": "carta",
+        "carta": {
+            "palo": "basto",
+            "numero": 7
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "truco"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[{"palo":"oro","numero":2}],"cartasEnMesaOponente":[{"palo":"basto","numero":7}],"jugadaAnterior":{"mensaje":"quiero","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [
+        {
+            "palo": "oro",
+            "numero": 2
+        }
+    ],
+    "cartasEnMesaOponente": [
+        {
+            "palo": "basto",
+            "numero": 7
+        }
+    ],
+    "jugadaAnterior": {
+        "mensaje": "quiero",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "irse al mazo"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":3,"puntosOponente":8}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"oro","numero":6},{"palo":"espada","numero":2},{"palo":"espada","numero":4}],"esMano":false}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 3,
+    "puntosOponente": 8
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "oro",
+            "numero": 6
+        },
+        {
+            "palo": "espada",
+            "numero": 2
+        },
+        {
+            "palo": "espada",
+            "numero": 4
+        }
+    ],
+    "esMano": false
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"envido","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "envido",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "no quiero"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":4,"puntosOponente":9}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"basto","numero":11},{"palo":"oro","numero":3},{"palo":"basto","numero":1}],"esMano":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 4,
+    "puntosOponente": 9
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "basto",
+            "numero": 11
+        },
+        {
+            "palo": "oro",
+            "numero": 3
+        },
+        {
+            "palo": "basto",
+            "numero": 1
+        }
+    ],
+    "esMano": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "irse al mazo"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":4,"puntosOponente":10}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"basto","numero":7},{"palo":"basto","numero":5},{"palo":"oro","numero":7}],"esMano":false}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 4,
+    "puntosOponente": 10
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "basto",
+            "numero": 7
+        },
+        {
+            "palo": "basto",
+            "numero": 5
+        },
+        {
+            "palo": "oro",
+            "numero": 7
+        }
+    ],
+    "esMano": false
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"falta envido","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "falta envido",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "quiero"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoEnvido","ganado":true,"tantosOponente":27}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":34,"puntosOponente":10}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoPartida","ganada":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"basto","numero":2},{"palo":"oro","numero":10},{"palo":"oro","numero":1}],"esMano":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoEnvido",
+    "ganado": true,
+    "tantosOponente": 27
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 34,
+    "puntosOponente": 10
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoPartida",
+    "ganada": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "basto",
+            "numero": 2
+        },
+        {
+            "palo": "oro",
+            "numero": 10
+        },
+        {
+            "palo": "oro",
+            "numero": 1
+        }
+    ],
+    "esMano": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "falta envido"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoEnvido","ganado":false,"tantosOponente":24}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":0,"puntosOponente":30}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoPartida","ganada":false}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"oro","numero":10},{"palo":"espada","numero":11},{"palo":"oro","numero":7}],"esMano":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoEnvido",
+    "ganado": false,
+    "tantosOponente": 24
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 0,
+    "puntosOponente": 30
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoPartida",
+    "ganada": false
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "oro",
+            "numero": 10
+        },
+        {
+            "palo": "espada",
+            "numero": 11
+        },
+        {
+            "palo": "oro",
+            "numero": 7
+        }
+    ],
+    "esMano": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "envido"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"real envido","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "real envido",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "no quiero"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"no quiero","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "no quiero",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "truco"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":1,"puntosOponente":3}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"oro","numero":7},{"palo":"espada","numero":6},{"palo":"basto","numero":6}],"esMano":false}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 1,
+    "puntosOponente": 3
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "oro",
+            "numero": 7
+        },
+        {
+            "palo": "espada",
+            "numero": 6
+        },
+        {
+            "palo": "basto",
+            "numero": 6
+        }
+    ],
+    "esMano": false
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"real envido","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "real envido",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "no quiero"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[{"palo":"espada","numero":1}],"jugadaAnterior":{"mensaje":"carta","carta":{"palo":"espada","numero":1}},"jugadasDisponibles":[{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [
+        {
+            "palo": "espada",
+            "numero": 1
+        }
+    ],
+    "jugadaAnterior": {
+        "mensaje": "carta",
+        "carta": {
+            "palo": "espada",
+            "numero": 1
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "carta", "carta": {"palo": "espada", "numero": 6}}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[{"palo":"espada","numero":6}],"cartasEnMesaOponente":[{"palo":"espada","numero":1},{"palo":"oro","numero":10}],"jugadaAnterior":{"mensaje":"carta","carta":{"palo":"oro","numero":10}},"jugadasDisponibles":[{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [
+        {
+            "palo": "espada",
+            "numero": 6
+        }
+    ],
+    "cartasEnMesaOponente": [
+        {
+            "palo": "espada",
+            "numero": 1
+        },
+        {
+            "palo": "oro",
+            "numero": 10
+        }
+    ],
+    "jugadaAnterior": {
+        "mensaje": "carta",
+        "carta": {
+            "palo": "oro",
+            "numero": 10
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "irse al mazo"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":1,"puntosOponente":6}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"basto","numero":1},{"palo":"basto","numero":7},{"palo":"basto","numero":10}],"esMano":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 1,
+    "puntosOponente": 6
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "basto",
+            "numero": 1
+        },
+        {
+            "palo": "basto",
+            "numero": 7
+        },
+        {
+            "palo": "basto",
+            "numero": 10
+        }
+    ],
+    "esMano": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "envido"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"no quiero","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "no quiero",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "carta", "carta": {"palo": "basto", "numero": 7}}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[{"palo":"basto","numero":7}],"cartasEnMesaOponente":[{"palo":"espada","numero":10}],"jugadaAnterior":{"mensaje":"truco","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"retruco","carta":{"palo":"","numero":0}},{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [
+        {
+            "palo": "basto",
+            "numero": 7
+        }
+    ],
+    "cartasEnMesaOponente": [
+        {
+            "palo": "espada",
+            "numero": 10
+        }
+    ],
+    "jugadaAnterior": {
+        "mensaje": "truco",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "retruco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "quiero"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[{"palo":"basto","numero":7}],"cartasEnMesaOponente":[{"palo":"espada","numero":10},{"palo":"oro","numero":1}],"jugadaAnterior":{"mensaje":"carta","carta":{"palo":"oro","numero":1}},"jugadasDisponibles":[{"mensaje":"retruco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [
+        {
+            "palo": "basto",
+            "numero": 7
+        }
+    ],
+    "cartasEnMesaOponente": [
+        {
+            "palo": "espada",
+            "numero": 10
+        },
+        {
+            "palo": "oro",
+            "numero": 1
+        }
+    ],
+    "jugadaAnterior": {
+        "mensaje": "carta",
+        "carta": {
+            "palo": "oro",
+            "numero": 1
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "retruco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "irse al mazo"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":2,"puntosOponente":7}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"basto","numero":3},{"palo":"espada","numero":4},{"palo":"oro","numero":4}],"esMano":false}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 2,
+    "puntosOponente": 7
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "basto",
+            "numero": 3
+        },
+        {
+            "palo": "espada",
+            "numero": 4
+        },
+        {
+            "palo": "oro",
+            "numero": 4
+        }
+    ],
+    "esMano": false
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":3,"puntosOponente":7}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"basto","numero":5},{"palo":"espada","numero":4},{"palo":"basto","numero":1}],"esMano":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 3,
+    "puntosOponente": 7
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "basto",
+            "numero": 5
+        },
+        {
+            "palo": "espada",
+            "numero": 4
+        },
+        {
+            "palo": "basto",
+            "numero": 1
+        }
+    ],
+    "esMano": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "irse al mazo"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":3,"puntosOponente":8}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"basto","numero":7},{"palo":"espada","numero":3},{"palo":"espada","numero":7}],"esMano":false}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 3,
+    "puntosOponente": 8
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "basto",
+            "numero": 7
+        },
+        {
+            "palo": "espada",
+            "numero": 3
+        },
+        {
+            "palo": "espada",
+            "numero": 7
+        }
+    ],
+    "esMano": false
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":4,"puntosOponente":8}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"oro","numero":10},{"palo":"basto","numero":7},{"palo":"oro","numero":2}],"esMano":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 4,
+    "puntosOponente": 8
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "oro",
+            "numero": 10
+        },
+        {
+            "palo": "basto",
+            "numero": 7
+        },
+        {
+            "palo": "oro",
+            "numero": 2
+        }
+    ],
+    "esMano": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "real envido"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoEnvido","ganado":false,"tantosOponente":24}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"quiero","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoEnvido",
+    "ganado": false,
+    "tantosOponente": 24
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "quiero",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "irse al mazo"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":4,"puntosOponente":12}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"espada","numero":10},{"palo":"espada","numero":11},{"palo":"espada","numero":1}],"esMano":false}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 4,
+    "puntosOponente": 12
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "espada",
+            "numero": 10
+        },
+        {
+            "palo": "espada",
+            "numero": 11
+        },
+        {
+            "palo": "espada",
+            "numero": 1
+        }
+    ],
+    "esMano": false
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"truco","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"retruco","carta":{"palo":"","numero":0}},{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "truco",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "retruco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "retruco"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"vale 4","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "vale 4",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "no quiero"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":4,"puntosOponente":15}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"espada","numero":11},{"palo":"espada","numero":1},{"palo":"oro","numero":3}],"esMano":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 4,
+    "puntosOponente": 15
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "espada",
+            "numero": 11
+        },
+        {
+            "palo": "espada",
+            "numero": 1
+        },
+        {
+            "palo": "oro",
+            "numero": 3
+        }
+    ],
+    "esMano": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "carta", "carta": {"palo": "espada", "numero": 1}}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[{"palo":"espada","numero":1}],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"real envido","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [
+        {
+            "palo": "espada",
+            "numero": 1
+        }
+    ],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "real envido",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "falta envido"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":6,"puntosOponente":15}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"espada","numero":4},{"palo":"basto","numero":1},{"palo":"oro","numero":1}],"esMano":false}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 6,
+    "puntosOponente": 15
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "espada",
+            "numero": 4
+        },
+        {
+            "palo": "basto",
+            "numero": 1
+        },
+        {
+            "palo": "oro",
+            "numero": 1
+        }
+    ],
+    "esMano": false
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[{"palo":"basto","numero":10}],"jugadaAnterior":{"mensaje":"carta","carta":{"palo":"basto","numero":10}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [
+        {
+            "palo": "basto",
+            "numero": 10
+        }
+    ],
+    "jugadaAnterior": {
+        "mensaje": "carta",
+        "carta": {
+            "palo": "basto",
+            "numero": 10
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "carta", "carta": {"palo": "espada", "numero": 4}}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[{"palo":"espada","numero":4}],"cartasEnMesaOponente":[{"palo":"basto","numero":10},{"palo":"oro","numero":5}],"jugadaAnterior":{"mensaje":"carta","carta":{"palo":"oro","numero":5}},"jugadasDisponibles":[{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [
+        {
+            "palo": "espada",
+            "numero": 4
+        }
+    ],
+    "cartasEnMesaOponente": [
+        {
+            "palo": "basto",
+            "numero": 10
+        },
+        {
+            "palo": "oro",
+            "numero": 5
+        }
+    ],
+    "jugadaAnterior": {
+        "mensaje": "carta",
+        "carta": {
+            "palo": "oro",
+            "numero": 5
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "truco"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":7,"puntosOponente":15}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"oro","numero":1},{"palo":"oro","numero":5},{"palo":"oro","numero":6}],"esMano":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 7,
+    "puntosOponente": 15
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "oro",
+            "numero": 1
+        },
+        {
+            "palo": "oro",
+            "numero": 5
+        },
+        {
+            "palo": "oro",
+            "numero": 6
+        }
+    ],
+    "esMano": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "irse al mazo"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":7,"puntosOponente":16}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"basto","numero":11},{"palo":"oro","numero":11},{"palo":"oro","numero":3}],"esMano":false}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 7,
+    "puntosOponente": 16
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "basto",
+            "numero": 11
+        },
+        {
+            "palo": "oro",
+            "numero": 11
+        },
+        {
+            "palo": "oro",
+            "numero": 3
+        }
+    ],
+    "esMano": false
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"real envido","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "real envido",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "quiero"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoEnvido","ganado":false,"tantosOponente":27}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoEnvido",
+    "ganado": false,
+    "tantosOponente": 27
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":8,"puntosOponente":19}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"basto","numero":7},{"palo":"oro","numero":4},{"palo":"basto","numero":10}],"esMano":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 8,
+    "puntosOponente": 19
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "basto",
+            "numero": 7
+        },
+        {
+            "palo": "oro",
+            "numero": 4
+        },
+        {
+            "palo": "basto",
+            "numero": 10
+        }
+    ],
+    "esMano": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "irse al mazo"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":8,"puntosOponente":20}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 8,
+    "puntosOponente": 20
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"basto","numero":1},{"palo":"espada","numero":7},{"palo":"oro","numero":3}],"esMano":false}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "basto",
+            "numero": 1
+        },
+        {
+            "palo": "espada",
+            "numero": 7
+        },
+        {
+            "palo": "oro",
+            "numero": 3
+        }
+    ],
+    "esMano": false
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":9,"puntosOponente":20}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"espada","numero":7},{"palo":"oro","numero":5},{"palo":"oro","numero":3}],"esMano":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 9,
+    "puntosOponente": 20
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "espada",
+            "numero": 7
+        },
+        {
+            "palo": "oro",
+            "numero": 5
+        },
+        {
+            "palo": "oro",
+            "numero": 3
+        }
+    ],
+    "esMano": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "irse al mazo"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":9,"puntosOponente":21}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"oro","numero":3},{"palo":"oro","numero":2},{"palo":"espada","numero":11}],"esMano":false}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 9,
+    "puntosOponente": 21
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "oro",
+            "numero": 3
+        },
+        {
+            "palo": "oro",
+            "numero": 2
+        },
+        {
+            "palo": "espada",
+            "numero": 11
+        }
+    ],
+    "esMano": false
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"real envido","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "real envido",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "no quiero"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":10,"puntosOponente":23}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 10,
+    "puntosOponente": 23
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"espada","numero":10},{"palo":"espada","numero":6},{"palo":"espada","numero":3}],"esMano":true}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"envido","carta":{"palo":"","numero":0}},{"mensaje":"real envido","carta":{"palo":"","numero":0}},{"mensaje":"falta envido","carta":{"palo":"","numero":0}},{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "espada",
+            "numero": 10
+        },
+        {
+            "palo": "espada",
+            "numero": 6
+        },
+        {
+            "palo": "espada",
+            "numero": 3
+        }
+    ],
+    "esMano": true
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "real envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "falta envido",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "envido"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"falta envido","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "falta envido",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "no quiero"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"no quiero","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "no quiero",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "carta", "carta": {"palo": "espada", "numero": 10}}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[{"palo":"espada","numero":10}],"cartasEnMesaOponente":[{"palo":"espada","numero":7},{"palo":"basto","numero":5}],"jugadaAnterior":{"mensaje":"carta","carta":{"palo":"basto","numero":5}},"jugadasDisponibles":[{"mensaje":"truco","carta":{"palo":"","numero":0}},{"mensaje":"carta","carta":{"palo":"","numero":0}},{"mensaje":"irse al mazo","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [
+        {
+            "palo": "espada",
+            "numero": 10
+        }
+    ],
+    "cartasEnMesaOponente": [
+        {
+            "palo": "espada",
+            "numero": 7
+        },
+        {
+            "palo": "basto",
+            "numero": 5
+        }
+    ],
+    "jugadaAnterior": {
+        "mensaje": "carta",
+        "carta": {
+            "palo": "basto",
+            "numero": 5
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "truco",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "carta",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "irse al mazo",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "irse al mazo"}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"resultadoMano","puntos":10,"puntosOponente":26}', rsv1=False, rsv2=False, rsv3=False)
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"iniciarMano","cartas":[{"palo":"oro","numero":7},{"palo":"espada","numero":6},{"palo":"basto","numero":1}],"esMano":false}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "resultadoMano",
+    "puntos": 10,
+    "puntosOponente": 26
+}
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "iniciarMano",
+    "cartas": [
+        {
+            "palo": "oro",
+            "numero": 7
+        },
+        {
+            "palo": "espada",
+            "numero": 6
+        },
+        {
+            "palo": "basto",
+            "numero": 1
+        }
+    ],
+    "esMano": false
+}
+DEBUG:websockets.protocol:server < Frame(fin=True, opcode=1, data=b'{"mensaje":"pedirJugada","cartasEnMesa":[],"cartasEnMesaOponente":[],"jugadaAnterior":{"mensaje":"falta envido","carta":{"palo":"","numero":0}},"jugadasDisponibles":[{"mensaje":"quiero","carta":{"palo":"","numero":0}},{"mensaje":"no quiero","carta":{"palo":"","numero":0}}]}', rsv1=False, rsv2=False, rsv3=False)
+INFO:root:<<<
+INFO:root:{
+    "mensaje": "pedirJugada",
+    "cartasEnMesa": [],
+    "cartasEnMesaOponente": [],
+    "jugadaAnterior": {
+        "mensaje": "falta envido",
+        "carta": {
+            "palo": "",
+            "numero": 0
+        }
+    },
+    "jugadasDisponibles": [
+        {
+            "mensaje": "quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        },
+        {
+            "mensaje": "no quiero",
+            "carta": {
+                "palo": "",
+                "numero": 0
+            }
+        }
+    ]
+}
+DEBUG:websockets.protocol:server > Frame(fin=True, opcode=1, data=b'{"mensaje": "no quiero"}', rsv1=False, rsv2=False, rsv3=False)
